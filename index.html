@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+    <!-- /link css -->
+    <!-- script js -->
+        <script src="https://unpkg.com/feather-icons"></script>
+    <!-- /script js -->
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#certifs" onclick="setActive('certifs')"><i data-feather="award"></i></a></li>
+            <li><a href="#projets" onclick="setActive('projets')"><i data-feather="github"></i></a></li>
+            <li><a href="#contacts" onclick="setActive('contacts')"><i data-feather="mail"></i></a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="onglet one active" id="certifs">
+            <h1 class="onglet-title">Mes certifs</h1>
+            <div class="contain">
+                <div>
+                    voila du coup le contenu
+                </div>
+            </div>
+        </div>
+        <div class="onglet two" id="projets">
+            <h1 class="onglet-title">Mes projets</h1>
+            <div class="contain">
+                <div>
+                    voila du coup le contenu
+                </div>
+            </div>
+        </div>
+        <div class="onglet three" id="contacts">
+            <h1 class="onglet-title">Me contacter</h1>
+            <div class="contain">                
+                <div>
+                    voila du coup le contenu
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

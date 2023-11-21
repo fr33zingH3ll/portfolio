@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.onglet {
+    position: fixed;
+    top: 100%;
+    transition: top 1s ease, z-index 0.5s;
+    z-index: 1;
+}
+
+.onglet.active {
+    top: 20%;
+    z-index: 2;
+}
+
+.onglet-title {
+    margin: 0;
+    width: 33%;
+    height: 10%;
+    background-color: aqua;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    bottom: 0;
+}
+
+.contain {
+    border-radius: 0 20px 0 0;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contain > div {
+    background-color: white;
+    width: 95%;
+    height: 95%;
+    border-radius: 0 10px 0 0;
+}
+
+.one .onglet-title {
+    left: 0;
+}
+
+.two .onglet-title {
+    left: 33%;
+}
+
+.three .onglet-title {
+    left: 66%;
+}
+
+.one, .two, .three {
+    width: 70%;
+    height: 100%;
+}
